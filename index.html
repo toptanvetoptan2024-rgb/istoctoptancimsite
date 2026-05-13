@@ -4,64 +4,115 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>istoctoptancim.com</title>
+<title>İstoç Toptancım | Toptan Alışveriş</title>
+<meta name="description" content="İstoç Toptancım ile toptan ürünleri inceleyin, WhatsApp üzerinden hızlı teklif alın.">
+
+<!-- META PIXEL BURAYA GELECEK -->
+<!-- Meta Pixel Code -->
+<!-- Facebook Pixel kodunu buraya yapıştıracağız -->
+<!-- End Meta Pixel Code -->
 
 <style>
-
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
 }
 
 body{
-background:#f3f3f3;
-overflow-x:hidden;
+  background:#f3f3f3;
+  overflow-x:hidden;
 }
-
-/* ANA ALAN */
 
 .container{
-width:100%;
-max-width:1920px;
-margin:auto;
-padding:8px;
+  width:100%;
+  max-width:1920px;
+  margin:auto;
+  padding:8px;
 }
-
-/* TÜM GÖRSELLER */
-
-img{
-width:100%;
-height:auto;
-display:block;
-border-radius:22px;
-}
-
-/* BOŞLUK */
 
 .section{
-margin-bottom:14px;
+  margin-bottom:14px;
+  position:relative;
 }
 
-/* MOBİL DÜZEN */
+img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:22px;
+}
+
+.whatsapp-fixed{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:9999;
+  background:#25D366;
+  color:white;
+  padding:15px 20px;
+  border-radius:50px;
+  font-size:17px;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 8px 25px rgba(0,0,0,0.25);
+}
+
+.cta-bar{
+  position:fixed;
+  left:0;
+  bottom:0;
+  width:100%;
+  display:none;
+  z-index:9998;
+  background:white;
+  padding:8px;
+  box-shadow:0 -4px 20px rgba(0,0,0,0.15);
+  gap:8px;
+}
+
+.cta-bar a{
+  flex:1;
+  text-align:center;
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+  padding:13px 6px;
+  border-radius:12px;
+  font-size:14px;
+}
+
+.cta-whatsapp{
+  background:#25D366;
+}
+
+.cta-call{
+  background:#111;
+}
 
 @media screen and (max-width:768px){
+  .container{
+    padding:5px;
+    padding-bottom:75px;
+  }
 
-.container{
-padding:5px;
+  img{
+    border-radius:14px;
+  }
+
+  .section{
+    margin-bottom:10px;
+  }
+
+  .whatsapp-fixed{
+    display:none;
+  }
+
+  .cta-bar{
+    display:flex;
+  }
 }
-
-img{
-border-radius:14px;
-}
-
-.section{
-margin-bottom:10px;
-}
-
-}
-
 </style>
 </head>
 
@@ -69,46 +120,53 @@ margin-bottom:10px;
 
 <div class="container">
 
-<!-- SLIDER -->
+  <!-- SLIDER -->
+  <div class="section">
+    <img src="slider.png" alt="İstoç Toptancım Toptan Alışveriş">
+  </div>
 
-<div class="section">
+  <!-- MOBİL APP -->
+  <div class="section">
+    <a href="https://www.istoctoptancim.com" target="_blank">
+      <img src="mobil.png" alt="Mobil Uygulama ve Toptan Sipariş">
+    </a>
+  </div>
 
-<img src="slider.png" alt="Slider">
+  <!-- KATEGORİLER -->
+  <div class="section">
+    <img src="kategori.png" alt="Toptan Ürün Kategorileri">
+  </div>
 
-</div>
+  <!-- TANITIM -->
+  <div class="section">
+    <img src="tanıtım.png" alt="Toptan Alışveriş Tanıtım">
+  </div>
 
-<!-- MOBİL APP -->
-
-<div class="section">
-
-<img src="mobil.png" alt="Mobil">
-
-</div>
-
-<!-- KATEGORİLER -->
-
-<div class="section">
-
-<img src="kategori.png" alt="Kategori">
-
-</div>
-
-<!-- TANITIM -->
-
-<div class="section">
-
-<img src="tanıtım.png" alt="Tanıtım">
+  <!-- FOOTER -->
+  <div class="section">
+    <img src="foter.png" alt="İletişim ve Firma Bilgileri">
+  </div>
 
 </div>
 
-<!-- FOOTER -->
+<!-- MASAÜSTÜ WHATSAPP -->
+<a class="whatsapp-fixed"
+   href="https://wa.me/905380318080?text=Merhaba,%20İstoç%20Toptancım%20hakkında%20bilgi%20almak%20istiyorum."
+   target="_blank">
+  WhatsApp Teklif Al
+</a>
 
-<div class="section">
+<!-- MOBİL ALT SABİT BAR -->
+<div class="cta-bar">
+  <a class="cta-whatsapp"
+     href="https://wa.me/905380318080?text=Merhaba,%20İstoç%20Toptancım%20hakkında%20bilgi%20almak%20istiyorum."
+     target="_blank">
+    WhatsApp
+  </a>
 
-<img src="foter.png" alt="Footer">
-
-</div>
-
+  <a class="cta-call" href="tel:+905380318080">
+    Hemen Ara
+  </a>
 </div>
 
 </body>
