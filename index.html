@@ -7,17 +7,12 @@
 <title>İstoç Toptancım | Toptan Alışveriş</title>
 <meta name="description" content="İstoç Toptancım ile toptan ürünleri inceleyin, WhatsApp üzerinden hızlı teklif alın.">
 
-<!-- META PIXEL BURAYA GELECEK -->
-<!-- Meta Pixel Code -->
-<!-- Facebook Pixel kodunu buraya yapıştıracağız -->
-<!-- End Meta Pixel Code -->
-
 <style>
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:Arial,sans-serif;
+  font-family:Arial, sans-serif;
 }
 
 body{
@@ -28,22 +23,24 @@ body{
 .container{
   width:100%;
   max-width:1920px;
-  margin:auto;
+  margin:0 auto;
   padding:8px;
+  padding-bottom:20px;
 }
 
 .section{
+  width:100%;
   margin-bottom:14px;
-  position:relative;
 }
 
-img{
+.section img{
   width:100%;
   height:auto;
   display:block;
   border-radius:22px;
 }
 
+/* MASAÜSTÜ WHATSAPP BUTONU */
 .whatsapp-fixed{
   position:fixed;
   right:18px;
@@ -51,7 +48,7 @@ img{
   z-index:9999;
   background:#25D366;
   color:white;
-  padding:15px 20px;
+  padding:15px 22px;
   border-radius:50px;
   font-size:17px;
   font-weight:bold;
@@ -59,20 +56,21 @@ img{
   box-shadow:0 8px 25px rgba(0,0,0,0.25);
 }
 
-.cta-bar{
+/* MOBİL ALT SABİT BAR */
+.mobile-cta{
   position:fixed;
   left:0;
   bottom:0;
   width:100%;
   display:none;
-  z-index:9998;
-  background:white;
+  z-index:9999;
+  background:#ffffff;
   padding:8px;
-  box-shadow:0 -4px 20px rgba(0,0,0,0.15);
   gap:8px;
+  box-shadow:0 -4px 20px rgba(0,0,0,0.18);
 }
 
-.cta-bar a{
+.mobile-cta a{
   flex:1;
   text-align:center;
   text-decoration:none;
@@ -83,33 +81,41 @@ img{
   font-size:14px;
 }
 
-.cta-whatsapp{
+.whatsapp-btn{
   background:#25D366;
 }
 
-.cta-call{
-  background:#111;
+.call-btn{
+  background:#111111;
 }
 
+/* MOBİL DÜZEN */
 @media screen and (max-width:768px){
-  .container{
-    padding:5px;
-    padding-bottom:75px;
+
+  body{
+    background:#f3f3f3;
   }
 
-  img{
-    border-radius:14px;
+  .container{
+    padding:5px;
+    padding-bottom:78px;
   }
 
   .section{
     margin-bottom:10px;
   }
 
+  .section img{
+    border-radius:14px;
+    width:100%;
+    height:auto;
+  }
+
   .whatsapp-fixed{
     display:none;
   }
 
-  .cta-bar{
+  .mobile-cta{
     display:flex;
   }
 }
@@ -127,9 +133,7 @@ img{
 
   <!-- MOBİL APP -->
   <div class="section">
-    <a href="https://www.istoctoptancim.com" target="_blank">
-      <img src="mobil.png" alt="Mobil Uygulama ve Toptan Sipariş">
-    </a>
+    <img src="mobil.png" alt="Mobil Uygulama ile Toptan Sipariş">
   </div>
 
   <!-- KATEGORİLER -->
@@ -139,32 +143,32 @@ img{
 
   <!-- TANITIM -->
   <div class="section">
-    <img src="tanıtım.png" alt="Toptan Alışveriş Tanıtım">
+    <img src="tanitim.png" alt="İstoç Toptancım Tanıtım">
   </div>
 
   <!-- FOOTER -->
   <div class="section">
-    <img src="foter.png" alt="İletişim ve Firma Bilgileri">
+    <img src="foter.png" alt="İletişim Bilgileri">
   </div>
 
 </div>
 
 <!-- MASAÜSTÜ WHATSAPP -->
 <a class="whatsapp-fixed"
-   href="https://wa.me/905380318080?text=Merhaba,%20İstoç%20Toptancım%20hakkında%20bilgi%20almak%20istiyorum."
+   href="https://wa.me/905300316127?text=Merhaba,%20İstoç%20Toptancım%20hakkında%20bilgi%20almak%20istiyorum."
    target="_blank">
   WhatsApp Teklif Al
 </a>
 
-<!-- MOBİL ALT SABİT BAR -->
-<div class="cta-bar">
-  <a class="cta-whatsapp"
-     href="https://wa.me/905380318080?text=Merhaba,%20İstoç%20Toptancım%20hakkında%20bilgi%20almak%20istiyorum."
+<!-- MOBİL ALT BUTONLAR -->
+<div class="mobile-cta">
+  <a class="whatsapp-btn"
+     href="https://wa.me/905300316127?text=Merhaba,%20İstoç%20Toptancım%20hakkında%20bilgi%20almak%20istiyorum."
      target="_blank">
     WhatsApp
   </a>
 
-  <a class="cta-call" href="tel:+905380318080">
+  <a class="call-btn" href="tel:+905300316127">
     Hemen Ara
   </a>
 </div>
